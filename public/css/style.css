@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-
+body {
+  background-color: rgb(24, 23, 23);
+}
 
 /* ESTILOS DE HEADER Y FOOTER */
 
@@ -21,6 +23,52 @@
 
 
 /* CARROUSEL */
+.bg-carrousel {
+  background-color: rgb(24, 23, 23);
+  margin-top: 5vh;
+
+}
+
+.carrousel {
+  width: 80vw;
+  margin-left: 10vw;
+  border-top: 2px rgb(189, 80, 80) solid;
+  box-sizing: content-box;
+  transform: translateY(-10px);
+
+}
+
+.c-img {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+}
+
+.c-img::-webkit-scrollbar {
+  width: 7px;
+  width: 20vw;
+}
+
+.c-img::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 80, 80);
+
+}
+
+.carrousel h3 {
+  font-size: 2.1rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 7vh;
+  padding-top: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrousel img {
+  width: 10vw;
+  border-radius: 5%;
+  padding-bottom: 5vh;
+}
+
 
 /* ----------------------------- */
 
