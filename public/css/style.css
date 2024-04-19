@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Nunito', sans-serif;
 }
 
 
@@ -237,6 +237,163 @@ button a {
 /* ----------------------------- */
 
 
+/* DETAIL */
+
+.body-detail {
+  background-color: #181419;
+}
+
+.header-detail {
+  background-color: #9F3647;
+  height: 10vh;
+  top: 0;
+  position: sticky;
+}
+
+.footer-detail {
+  background-color: #9F3647;
+  height: 15vh;
+}
+
+.main-detail {
+  height: 150vh;
+
+}
+
+.section-1 {
+  padding-top: 50px;
+  background: linear-gradient(to right top, #6d6969a7, #6d6969a7), url("../img/mario-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.img-mario {
+  border-radius: 20px;
+  height: 450px;
+  width: 300px;
+}
+
+.contenedor-texto-detail {
+  width: 51%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+
+.titulo-mario {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.titulo-mario h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.overview p {
+  line-height: 1.5rem;
+}
+
+.div-diseñadores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aaron {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.michael {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.matthew {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.section-2 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+
+.trailer h1 {
+  color: white;
+}
+
+.info {
+  width: 23vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.keys-propertys {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.keys {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.keys h3 {
+  font-weight: 600;
+}
+
+.propertys {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.propertys h3 {
+  font-weight: lighter;
+}
+
+/* ______________________________ */
+
+
+
+
 
 /* MEDIA QUERYS */
 
@@ -290,6 +447,8 @@ button a {
     width: 95%;
   }
 
+  /* ____________ */
+
   /*LOGIN  */
 
   .main-login {
@@ -325,4 +484,73 @@ button a {
   .registro-form {
     align-self: center;
   }
+
+  /* ______________ */
+
+  /* DETAIL */
+  .main-detail {
+    height: initial;
+  }
+
+  .section-1 {
+    height: initial;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-texto-detail {
+    margin-bottom: 1rem;
+  }
+
+  .titulo-mario h1 {
+    font-size: 1.5rem;
+  }
+
+  .overview h2 {
+    font-size: 1.2rem;
+  }
+
+  .img-mario {
+    width: 200px;
+    height: 300px;
+  }
+
+  .section-2 {
+    height: initial;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .trailer {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .video {
+    width: 90vw;
+  }
+
+  .info {
+    width: 90vw;
+  }
+
+  .keys-propertys {
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+
+  .keys {
+    font-size: 14px;
+    gap: 1rem;
+  }
+
+  .propertys {
+    font-size: 14px;
+    gap: 1rem;
+  }
+
+  /* ____________ */
 }
