@@ -1,6 +1,8 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Nunito', sans-serif; */
 }
 
 
@@ -29,6 +31,66 @@
 
 /* REGISTRO */
 
+.div-form-register {
+  background-color: #2A2A2A;
+  height: 90vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-register {
+  width: 23vw;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  width: 23vw;
+}
+
+.terminos-y-condiciones {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.texto-check {
+  margin-left: 10px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.necesitas-ayuda {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton-register {
+  width: 92%;
+  box-sizing: content-box;
+  background-color: #9f3647;
+  border: 2px solid #9f3647;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  margin-bottom: .2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .5s;
+}
+
+.boton-register:hover {
+  box-shadow: 1px 1px 3px 3px rgb(226, 131, 131);
+}
+
+
 /* ----------------------------- */
 
 
@@ -37,4 +99,230 @@
 
 /* LOGIN */
 
+
+
+.header-login {
+  height: 8vh;
+  padding: 1.75rem;
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 1.17rem;
+  text-decoration: none;
+  color: white;
+}
+
+.body-login {
+  height: 100vh;
+  background-image: linear-gradient(to right top, #24242473, #24242473), url("../img/bg-register.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-form-login {
+  background-color: #2A2A2A;
+  height: 90vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aparecer {
+  opacity: 0;
+  /* Inicialmente, el div estará oculto */
+  animation: aparecerAnimacion 1s forwards;
+  /* Aplicamos la animación */
+  transform-origin: center;
+  /* Establecemos el origen de la transformación en el centro del div */
+}
+
+@keyframes aparecerAnimacion {
+
+  /* Definimos el keyframe */
+  from {
+    opacity: 0;
+    /* El div está completamente transparente al principio */
+    transform: scale(0.5);
+    /* El div está reducido a la mitad de su tamaño */
+  }
+
+  to {
+    opacity: 1;
+    /* El div estará completamente visible al final */
+    transform: scale(1);
+    /* El div vuelve a su tamaño original */
+  }
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  width: 22vw;
+}
+
+.inputs {
+  border-radius: 2rem;
+  border: 2px solid #9f3647;
+  height: 2.6rem;
+  width: 100%;
+  padding: 0px 22px;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  background-color: #333333;
+  color: rgb(255, 255, 255);
+  outline: none;
+}
+
+.titulo-login {
+  width: 23vw;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.boton-login {
+  width: 93%;
+  box-sizing: content-box;
+  background-color: #9f3647;
+  border: 2px solid #9f3647;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  margin-bottom: .2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .5s;
+}
+
+.anchor-button-login {
+  align-self: flex-start;
+  width: 93%;
+}
+
+.boton-login:hover {
+  box-shadow: 1px 1px 3px 3px rgb(226, 131, 131);
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+.registro-form {
+  color: #787878;
+  align-self: flex-start;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.registro-form:hover {
+  color: white
+}
+
 /* ----------------------------- */
+
+
+
+/* MEDIA QUERYS */
+
+
+@media (max-width: 1200px) {
+
+  .header-login {
+    display: flex;
+  }
+
+  .icon-movie {
+    width: 12px;
+  }
+
+  .movies {
+    font-size: 1rem;
+  }
+
+  /* REGISTRO */
+
+  .div-form-register {
+    width: 95vw;
+  }
+
+  .titulo-register {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .form-register {
+    width: 70vw;
+    height: 70vh;
+  }
+
+
+  .inputs {
+    height: 2.8rem;
+    font-size: 1rem;
+  }
+
+  .boton-register {
+    font-size: 1rem;
+  }
+
+  .anchor-button {
+    width: 95%;
+    align-self: center;
+  }
+
+  .necesitas-ayuda {
+    width: 95%;
+  }
+
+  /*LOGIN  */
+
+  .main-login {
+    display: flex;
+    align-items: center;
+  }
+
+  .div-form-login {
+    width: 95vw;
+  }
+
+  .form-login {
+    width: 70vw;
+    height: 40vh;
+  }
+
+  .titulo-login {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  .anchor-button-login {
+    margin: 20px;
+    width: 90%;
+    align-self: center;
+  }
+
+  .boton-login {
+    font-size: .8rem;
+  }
+
+  .registro-form {
+    align-self: center;
+  }
+}
