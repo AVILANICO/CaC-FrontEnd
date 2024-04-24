@@ -330,11 +330,33 @@ button a {
   gap: .5rem;
 }
 
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
 .section-2 {
   height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+
+  view-timeline-name: --section2;
+  view-timeline-axis: block;
+
+  animation-timeline: --section2;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
 
 
