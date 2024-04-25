@@ -30,6 +30,8 @@
         background-color: var(--bgprimary);
         color: var(--textcolor);
         height: 10vh;
+        position: sticky;
+        top: 0;
         
 
         nav {
@@ -182,11 +184,20 @@
     padding: 0.4rem 1rem;
     border-radius: 5px;
 }
+.flechaArriba img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    
+}
   
 .flechaArriba  {
   
- position: sticky;
- top: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
 
 }
   
