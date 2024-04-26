@@ -33,19 +33,16 @@ body {
   width: 80vw;
   margin-left: 10vw;
   border-top: 2px rgb(189, 80, 80) solid;
-  box-sizing: content-box;
-  transform: translateY(-10px);
 
 }
 
 .c-img {
-  display: flex;
-  justify-content: space-evenly;
   overflow-x: scroll;
+  display: flex;
+  gap: 1rem;
 }
 
 .c-img::-webkit-scrollbar {
-  width: 7px;
   width: 20vw;
 }
 
@@ -65,8 +62,9 @@ body {
 
 .carrousel img {
   width: 10vw;
-  border-radius: 5%;
-  padding-bottom: 5vh;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+
 }
 
 
