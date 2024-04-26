@@ -19,7 +19,6 @@
 section h3 {
   color: white;
   font-size: 2.5rem;
-  /* font-weight: 700; */
   margin-bottom: 40px;
   text-align: center;
 }
@@ -39,7 +38,6 @@ hr {
 .conteiner {
   max-width: 80%;
   margin: 0 auto;
-  /* border: white solid 2px; */
   view-timeline-name: --conteiner;
   view-timeline-axis: block;
   animation-timeline: --conteiner;
