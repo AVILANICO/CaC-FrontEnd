@@ -346,7 +346,10 @@ h2 {
       align-items: center;
       text-align: center;
       padding: 10rem;
-
+      opacity: 0;
+      animation: aparecerAnimacion 1s forwards;
+      transform-origin: center;
+      
       .h1-jonathan & .h2-jonathan {
         text-align: center;
       }
@@ -976,8 +979,7 @@ button a {
 
 /* MEDIA QUERYS */
 
-
-@media (max-width: 1200px) {
+@media (max-width:1200px){
 
   .header-login {
     display: flex;
@@ -1131,5 +1133,5 @@ button a {
     gap: 1rem;
   }
 
-  /* ____________ */
+  /* ____________ */ 
 }
